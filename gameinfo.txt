@@ -1,0 +1,16 @@
+"GameInfo"
+{
+	game	"Captioneer"
+	type singpleplayer_only
+
+	FileSystem
+	{
+		SteamAppId				440		// This mounts TF2, we dont really need it
+		ToolsAppId				211		// Don't need that either
+		
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+		}
+	}
+}
