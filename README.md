@@ -1,14 +1,14 @@
 # Captioneer
 
-With Captioneer you can compile your own caption files which can be used to write scripts with a GUI output.
+With Captioneer you can easily create your own [Closed Captions for Source-based Games](https://developer.valvesoftware.com/wiki/Closed_Captions), like for Team Fortress 2.
 
 ## Prerequisites
 
-Make sure you have installed the Source SDK!
+Make sure you have [installed the Source SDK](https://developer.valvesoftware.com/wiki/SDK_Installation)!
 
 ## Usage
 
-### Configuration
+### 1. Configuration
 
 Captioneer is very easy to use. Just edit the `captions.txt` file and add captions in the following format:
 
@@ -28,8 +28,11 @@ and the variable value will be inserted.
 
 All lines beginning with a `//` or `#` will be treated as comments and ignored.
 
-### Compiling
+You can find an example already in [`captions.txt`](https://github.com/Philipp15b/Captioneer/blob/master/captions.txt).
+
+### 2. Compiling
 
 > `captioneer filename [--language="english"]`
 
-Run `captioneer` with the filename input path and optionally the language. It will then create a `closecaption_language.dat` in the current working directory.
+Run `captioneer` with the filename input path and optionally the language on the command line.
+It will then create a `closecaption_language.dat` in the current directory.
