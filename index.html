@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Captioneer by Philipp15b</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Philipp15b/Captioneer">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Philipp15b/Captioneer/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Philipp15b/Captioneer/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Captioneer</h1>
+          <p>A tool to write and compile closed captions for Source Engine-based games.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Philipp15b">Philipp15b</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>With Captioneer you can easily create your own <a href="https://developer.valvesoftware.com/wiki/Closed_Captions">Closed Captions for Source-based Games</a>, like for Team Fortress 2.</p>
+
+<h2>Prerequisites</h2>
+
+<p>Make sure you have <a href="https://developer.valvesoftware.com/wiki/SDK_Installation">installed the Source SDK</a>!</p>
+
+<h2>Usage</h2>
+
+<h3>1. Configuration</h3>
+
+<p>Captioneer is very easy to use. Just edit the <code>captions.txt</code> file and add captions in the following format:</p>
+
+<pre><code>name: value
+</code></pre>
+
+<p>with one caption per line.</p>
+
+<p>You can also use variables, to define them just add a <code>$</code> before the name, like so:</p>
+
+<pre><code>$my.variable: my value
+</code></pre>
+
+<p>To use variables in your captions, write</p>
+
+<pre><code>$(my.variable)
+</code></pre>
+
+<p>and the variable value will be inserted.</p>
+
+<p>All lines beginning with a <code>//</code> or <code>#</code> will be treated as comments and ignored.</p>
+
+<h3>2. Compiling</h3>
+
+<blockquote>
+<p><code>captioneer filename [--language="english"]</code></p>
+</blockquote>
+
+<p>Run <code>captioneer</code> with the filename input path and optionally the language. It will then create a <code>closecaption_language.dat</code> in the current working directory.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
